@@ -1,0 +1,253 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&display=swap");
+
+:root {
+  /* Warna */
+  --main-color: #404146;
+  --yellow-color: #f1d00e;
+  --bg-container: #f4f4f4;
+  --bg-footer: #7c7d82;
+
+  /* Font */
+  --main-font: "Manrope", sans-serif;
+
+  /* Font Size */
+  --biggest-font-size: 48px;
+  --bigger-font-size: 28px;
+  --h2-font-size: 30px;
+  --p-font-size: 16px;
+
+  /* Font Weight */
+  --light-font: 200;
+  --regular-font: 400;
+  --bold-font: 700;
+  --extra-bold-font: 800;
+}
+
+/* Reset HTML */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+a {
+  font-family: var(--main-font);
+}
+
+/* Reusable CSS */
+.section {
+  padding: 100px 0 100px;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section__title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--extra-bold-font);
+  color: var(--main-color);
+  margin-bottom: 16px;
+}
+
+.section__subtitle {
+  font-size: var(--p-font-size);
+  line-height: 140%;
+  color: var(--main-color);
+}
+
+/* Header */
+.header {
+  background-color: var(--main-color);
+  padding: 20px 0;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav__logo {
+  font-size: 25px;
+  font-weight: var(--extra-bold-font);
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.nav__list {
+  display: flex;
+  gap: 20px;
+}
+
+.nav__link {
+  font-size: 14px;
+  color: var(--bg-container);
+}
+
+.nav__mobile-menu {
+  display: none;
+}
+
+/* Hero Section */
+.hero__container {
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 80px;
+  letter-spacing: 6px;
+  font-weight: var(--extra-bold-font);
+  color: var(--main-color);
+}
+
+.hero__title span {
+  color: var(--yellow-color);
+}
+
+.hero__desc {
+  font-size: 40px;
+  font-weight: var(--light-font);
+  color: var(--main-color);
+}
+
+.hero__img {
+  width: 180px;
+}
+
+/* Tentang Section */
+.tentang {
+  background-color: var(--bg-container);
+}
+
+.tentang__container {
+  text-align: center;
+}
+
+/* Proyek Section */
+.proyek__container {
+  text-align: center;
+}
+
+.proyek__cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.proyek__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.proyek__card-img {
+  width: 250px;
+  box-shadow: 0 8px 12px hsla(228, 66%, 45%, 0.1);
+  margin-bottom: 16px;
+}
+
+/* Kontak Section */
+.kontak {
+  background-color: var(--bg-container);
+}
+
+.kontak__form {
+  gap: 20px;
+}
+
+.kontak__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kontak__form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+}
+
+.kontak__form-input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  resize: none;
+}
+
+.kontak__form-input:focus {
+  outline: none;
+}
+
+.kontak__button {
+  font-family: var(--main-font);
+  align-self: center;
+  width: 50%;
+  padding: 10px;
+  border-radius: 4px;
+  color: var(--main-color);
+  background-color: var(--yellow-color);
+  border: none;
+  cursor: pointer;
+}
+
+.kontak__button:active {
+  background-color: #b19a16;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-footer);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  font-size: 30px;
+  font-weight: var(--extra-bold-font);
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.footer__list {
+  text-align: center;
+}
+
+.footer__link {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 10px;
+}

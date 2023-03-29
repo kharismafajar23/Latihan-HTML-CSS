@@ -1,0 +1,110 @@
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --biggest-font-size: 40px;
+    --bigger-font-size: 20px;
+    --h2-font-size: 24px;
+    --p-font-size: 12px;
+  }
+
+  .container {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .nav__link {
+    font-size: 12px;
+  }
+
+  .hero__title {
+    font-size: 60px;
+  }
+
+  .hero__desc {
+    font-size: 32px;
+  }
+
+  .proyek__cards {
+    flex-wrap: wrap;
+  }
+
+  .proyek__card-img {
+    width: 150px;
+  }
+
+  .proyek__card-name {
+    font-size: 14px;
+  }
+
+  .footer__link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    max-width: 85%;
+  }
+
+  .nav__logo {
+    font-size: 14px;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__mobile-menu {
+    display: flex;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .hero__title {
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+
+  .hero__desc {
+    font-size: 24px;
+  }
+
+  .proyek__cards {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .proyek__card:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .kontak__form {
+    width: 90%;
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .kontak__button {
+    width: 70%;
+  }
+
+  .footer__logo {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
